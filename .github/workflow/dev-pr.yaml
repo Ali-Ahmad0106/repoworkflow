@@ -1,0 +1,11 @@
+name: wf_dev_pr
+on:
+  pull request:
+    branches:
+      - develop
+jobs:
+  dev_pr_job:
+    runs-on: ununtu-latest
+    steps:
+      - name: first steps
+        run: echo "hello"      
